@@ -1,0 +1,31 @@
+{
+  "name": "electron_angular_boilerplate",
+  "version": "0.0.0",
+  "description": "A startig template for eletron.io with angularjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/soluniware/electron_angular_boilerplate.git"
+  },
+  "keywords": [
+    "electron.io",
+    "angularjs",
+    "template",
+    "boilerplate",
+    "gulp",
+    "jQuery"
+  ],
+  "author": "Behnam Raeisifard",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/soluniware/electron_angular_boilerplate/issues"
+  },
+  "homepage": "https://github.com/soluniware/electron_angular_boilerplate#readme",
+  "devDependencies": {
+    "electron": "1.7.9",
+    "gulp": "^3.9.1"
+  }
+}
