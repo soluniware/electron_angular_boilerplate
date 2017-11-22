@@ -4,73 +4,56 @@
     .section {
         text-align: center;
     }
+
     /* Backgrounds will cover all the section
         * --------------------------------------- */
     #section1,
     #section2,
-    #section4{
+    #section4 {
         background-size: cover;
     }
 
     /* Defining each section background and styles
     * --------------------------------------- */
-    #section1{
+    #section1 {
         background-image: url(./sys/theme/page_piling/resources/img/bg1.jpg);
     }
-    #section2{
+
+    #section2 {
         background-image: url(./sys/theme/page_piling/resources/img/bg2.jpg);
-        padding: 6% 0 0 0;
+    / / padding: 6 % 0 0 0;
     }
-    #section4{
+
+    #section4 {
         background-image: url(./sys/theme/page_piling/resources/img/bg3.jpg);
-        padding: 6% 0 0 0;
+    / / padding: 6 % 0 0 0;
     }
-    #section3 h1{
+
+    #section3 h1 {
         color: #000;
     }
+
     #myVideo {
         position: absolute;
         z-index: 4;
         right: 0;
         bottom: 0;
         top: 0;
-        right: 0;
+    / / right: 0;
         width: 100%;
         height: 100%;
-        background-size: 100% 100%;
+    / / background-size: 100 % 100 %;
         background-color: black; /* in case the video doesn't fit the whole page*/
         background-image: /* our video */;
         background-position: center center;
-        background-size: contain;
+    / / background-size: contain;
         object-fit: fill; /*cover video background */
     }
 
 </style>
 <div id="pagepiling">
-    <div class="section" id="section1">
-        <!--<div class="intro">
-            <h1>No limits</h1>
-            <p>Anything is possible with pagePiling.js!</p>
-        </div>-->
-    </div>
-    <div class="section" id="section2">
-        <div class="intro">
-           <!-- <h1>No limits</h1>
-            <p>Anything is possible with pagePiling.js!</p>-->
-        </div>
-    </div>
-    <div class="section" id="section3">
-        <video autoplay loop muted id="myVideo">
-            <source src="./sys/theme/page_piling/resources/img/flowers.mp4" type="video/mp4">
-        </video>
-        <div class="layer">
-            <h1>pagePiling.js video</h1>
-        </div>
-    </div>
-    <div class="section" id="section4">
-        <div class="intro">
-            <h1>afterRender</h1>
-            <p>Don't forget to use afterRender callback for it!</p>
-        </div>
+    <div class="section" ng-repeat="item in workbench track by $index"
+            ng-init="$last && finished()" id={{"section"+($index+1)}}>
+       <!-- <div web-view=""></div>-->
     </div>
 </div>
